@@ -1,0 +1,70 @@
+// Basic
+@include outer-container;
+  @include span-columns(6);
+  @include span-columns(6);
+
+//Multiple rows
+@include outer-container;
+  @include span-columns(1);
+  @include span-columns(11);
+  @include omega();
+  @include span-columns(2);
+  @include span-columns(10);
+  @include omega();
+  @include span-columns(3);
+  @include span-columns(9);
+  @include omega();
+  @include span-columns(4);
+  @include span-columns(8);
+  @include omega();
+  @include span-columns(5);
+  @include span-columns(7);
+  @include omega();
+  @include span-columns(6);
+  @include span-columns(6);
+  @include omega();
+
+// Nesting columns
+@include outer-container;
+  @include span-columns(4);
+  @include span-columns(8);
+    @include span-columns(4 of 8);
+    @include span-columns(4 of 8);
+
+// Table grid
+@include outer-container;
+  @include fill-parent();
+  @include row(table);
+    @include span-columns(4);
+    @include pad();
+    @include span-columns(8);
+    @include reset-display;
+    @include pad();
+
+// Shifting columns
+@include outer-container;
+  @include span-columns(6);
+  @include shift(3);
+
+// Automatic rows
+@include outer-container;
+  li.block {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+// li.block
+// li.block
+// li.block
+
+// Media Queries
+
+@include outer-container;
+$mobile: new-breakpoint(max-width 500px 4);
+  @include span-columns(4);
+  @include media($mobile) {
+    @include span-columns(3);
+  }
+  @include span-columns(8);
+  @include media($mobile) {
+    @include span-columns(3);
+  }

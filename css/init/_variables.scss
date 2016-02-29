@@ -1,0 +1,46 @@
+// Fonts
+
+$base-border-radius: 3px !default;
+$base-font-color: $dark-gray !default;
+$base-font-size:   16px;
+$base-line-height: 20px; //was24px
+$base-spacing: 1.5em !default;
+$base-unit:        'rem';
+
+$rem-fallback:     true;
+
+
+
+// Breakpoints
+$xxxs: 333px;
+$xxs:  444px;
+$xs:   555px;
+$s:    666px;
+$m:    777px;
+$l:    888px;
+$xl:   999px;
+$xxl:  1111px;
+$xxxl: 1222px;
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+// Font Sizes
+$fxxl:              32px;
+$fxl:               24px;
+$fl:                20px;
+$fm:                $base-font-size;
+$fs:                14px;
+$fxs:               10px;
+
+// Misc
+//
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: 2 * $base-font-size;
+
+// The height of the navigation container.
+$nav-height: 2 * $base-line-height;
+
+/////////////////// Remove or Move from Below!
+//header
+//footer

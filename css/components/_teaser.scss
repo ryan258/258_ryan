@@ -1,0 +1,70 @@
+.teaser {
+  @include outer-container;
+
+  &--home {
+    //@include span-columns(12);
+    //@include omega();
+    &__header {
+      @include span-columns(12 of 12);
+    }
+    &__body {
+      @include span-columns(12 of 12);
+      //@include omega();
+    }
+  }
+  &--misc {
+    //@include outer-container;
+
+    &__header {
+      @include span-columns(12 of 12);
+    }
+    &__content {
+      @include span-columns(8 of 12);
+    }
+    &__aside {
+      @include span-columns(4 of 12);
+    }
+  }
+  &--strategy {
+    @include span-columns(3);
+    &__header {
+
+    }
+    &__content {
+
+    }
+  }
+  &--web-design {
+    @include span-columns(3);
+    &__header {
+
+    }
+    &__content {
+
+    }
+  }
+  &--web-development {
+    @include span-columns(3);
+    &__header {
+
+    }
+    &__content {
+
+    }
+  }
+  &--consulting {
+    @include span-columns(3);
+    //@include omega();
+    &__header {
+
+    }
+    &__content {
+
+    }
+  }
+
+
+
+
+
+}

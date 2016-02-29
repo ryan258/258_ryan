@@ -1,0 +1,61 @@
+// Headings
+//
+// All HTML headings, `<h1>` through `<h6>`, are available. `%h1` through `%h6`
+// classes are also available, for when you want to match the font styling of a
+// heading but still want your text to be displayed inline.
+//
+// Markup: headings-h.hbs
+//
+// Style guide: base.headings
+
+// Address variable `h1` font-size and margin within `section` and `article`
+// contexts in Firefox 4+, Safari, and Chrome.
+h1,
+%h1 {
+  // Set the font-size and line-height while keeping a proper vertical rhythm.
+  font-size: $fxxl;
+  line-height: ($base-line-height * 2)em;
+  // Set 1 unit of vertical rhythm on the top and bottom margins.
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+h2,
+%h2 {
+  font-size: $fxl;
+  line-height: ($base-line-height * 1.5)em;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+h3,
+%h3 {
+  font-size: $fl;
+  line-height: ($base-line-height * 1.5)em;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+h4,
+%h4 {
+  font-size: $fm;
+  line-height: $base-line-height;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+h5,
+%h5 {
+  font-size: $fs;
+  line-height: $base-line-height;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+h6,
+%h6 {
+  font-size: $fxs;
+  line-height: $base-line-height;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}

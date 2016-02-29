@@ -1,0 +1,6 @@
+
+section {
+  @include outer-container;
+  aside { @include span-columns(6); }
+  article { @include span-columns(6);  }
+}
