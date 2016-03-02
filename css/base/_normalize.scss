@@ -35,6 +35,8 @@ body {
   // Remove default margin and padding.
   margin: 0;
   padding: 0;
+  background-color: $blue;
+  color: $white;
 }
 
 // Use the saner border-box model for all elements.
@@ -98,4 +100,8 @@ audio:not([controls]) {
 // Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
 template {
   display: none;
+}
+
+img.nop {
+  opacity: .2;
 }

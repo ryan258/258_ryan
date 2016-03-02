@@ -1,12 +1,8 @@
-$footer-background: desaturate(darken($action-color, 20%), 30%);
-$footer-color: white;
-$footer-link-color: transparentize($footer-color, 0.6);
-$footer-disclaimer-color: transparentize($footer-color, 0.6);
 
 .l-footer {
+  border-top: 1px solid $white;
 
-
-  background: $footer-background;
+  //background: $footer-background;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
 
@@ -40,29 +36,29 @@ $footer-disclaimer-color: transparentize($footer-color, 0.6);
   }
 
   li a {
-    color: $footer-link-color;
+    color: $white;
     text-decoration: none;
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: $white;
     }
   }
 
   li h3 {
-    color: $footer-color;
+    color: $white;
     font-size: 1em;
     margin-bottom: 0.4em;
   }
 
   hr {
-    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    border: 1px solid $white;
     margin: 0 auto $base-spacing;
     width: 12em;
   }
 
   p {
-    color: $footer-disclaimer-color;
+    color: $white;
     font-size: 0.9em;
     line-height: 1.5em;
     margin: auto;
